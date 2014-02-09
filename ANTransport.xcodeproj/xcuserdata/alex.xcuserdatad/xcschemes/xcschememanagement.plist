@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TransportTester.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>FADE5DE518A70325000180D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FADE5E0018A70399000180D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FADE5E1A18A70399000180D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

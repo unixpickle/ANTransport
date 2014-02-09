@@ -7,66 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FADE5DC918A70325000180D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADE5DC818A70325000180D8 /* Cocoa.framework */; };
-		FADE5DD318A70325000180D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FADE5DD118A70325000180D8 /* InfoPlist.strings */; };
-		FADE5DD518A70325000180D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5DD418A70325000180D8 /* main.m */; };
-		FADE5DD918A70325000180D8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FADE5DD718A70325000180D8 /* Credits.rtf */; };
-		FADE5DDC18A70325000180D8 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5DDB18A70325000180D8 /* ANAppDelegate.m */; };
-		FADE5DDF18A70325000180D8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE5DDD18A70325000180D8 /* MainMenu.xib */; };
-		FADE5DE118A70325000180D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE5DE018A70325000180D8 /* Images.xcassets */; };
-		FADE5DE818A70325000180D8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADE5DE718A70325000180D8 /* XCTest.framework */; };
-		FADE5DE918A70325000180D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADE5DC818A70325000180D8 /* Cocoa.framework */; };
-		FADE5DF118A70325000180D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FADE5DEF18A70325000180D8 /* InfoPlist.strings */; };
-		FADE5DF318A70325000180D8 /* ANTransportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5DF218A70325000180D8 /* ANTransportTests.m */; };
+		FADE5E0218A70399000180D8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FADE5DC818A70325000180D8 /* Cocoa.framework */; };
+		FADE5E0818A70399000180D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FADE5E0618A70399000180D8 /* InfoPlist.strings */; };
+		FADE5E0A18A70399000180D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E0918A70399000180D8 /* main.m */; };
+		FADE5E0E18A70399000180D8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FADE5E0C18A70399000180D8 /* Credits.rtf */; };
+		FADE5E1118A70399000180D8 /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E1018A70399000180D8 /* ANAppDelegate.m */; };
+		FADE5E1418A70399000180D8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE5E1218A70399000180D8 /* MainMenu.xib */; };
+		FADE5E1618A70399000180D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE5E1518A70399000180D8 /* Images.xcassets */; };
+		FADE5E3318A70501000180D8 /* ANTransportScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E3218A70501000180D8 /* ANTransportScanner.m */; };
+		FADE5E3618A7050B000180D8 /* ANTransportServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E3518A7050B000180D8 /* ANTransportServer.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FADE5DEA18A70325000180D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FADE5DBD18A70325000180D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FADE5DC418A70325000180D8;
-			remoteInfo = ANTransport;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		FADE5DC518A70325000180D8 /* ANTransport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANTransport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADE5DC818A70325000180D8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FADE5DCB18A70325000180D8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FADE5DCC18A70325000180D8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FADE5DCD18A70325000180D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FADE5DD018A70325000180D8 /* ANTransport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ANTransport-Info.plist"; sourceTree = "<group>"; };
-		FADE5DD218A70325000180D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FADE5DD418A70325000180D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FADE5DD618A70325000180D8 /* ANTransport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ANTransport-Prefix.pch"; sourceTree = "<group>"; };
-		FADE5DD818A70325000180D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FADE5DDA18A70325000180D8 /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
-		FADE5DDB18A70325000180D8 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
-		FADE5DDE18A70325000180D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		FADE5DE018A70325000180D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FADE5DE618A70325000180D8 /* ANTransportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANTransportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FADE5DE718A70325000180D8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FADE5DEE18A70325000180D8 /* ANTransportTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ANTransportTests-Info.plist"; sourceTree = "<group>"; };
-		FADE5DF018A70325000180D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FADE5DF218A70325000180D8 /* ANTransportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANTransportTests.m; sourceTree = "<group>"; };
+		FADE5E0118A70399000180D8 /* TransportTester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransportTester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADE5E0518A70399000180D8 /* TransportTester-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransportTester-Info.plist"; sourceTree = "<group>"; };
+		FADE5E0718A70399000180D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FADE5E0918A70399000180D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FADE5E0B18A70399000180D8 /* TransportTester-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransportTester-Prefix.pch"; sourceTree = "<group>"; };
+		FADE5E0D18A70399000180D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FADE5E0F18A70399000180D8 /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FADE5E1018A70399000180D8 /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
+		FADE5E1318A70399000180D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FADE5E1518A70399000180D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FADE5E1C18A70399000180D8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FADE5E3018A703D7000180D8 /* ANTransport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANTransport.h; sourceTree = "<group>"; };
+		FADE5E3118A70501000180D8 /* ANTransportScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTransportScanner.h; sourceTree = "<group>"; };
+		FADE5E3218A70501000180D8 /* ANTransportScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTransportScanner.m; sourceTree = "<group>"; };
+		FADE5E3418A7050B000180D8 /* ANTransportServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTransportServer.h; sourceTree = "<group>"; };
+		FADE5E3518A7050B000180D8 /* ANTransportServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTransportServer.m; sourceTree = "<group>"; };
+		FADE5E3718A70546000180D8 /* ANTransportIdentity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANTransportIdentity.h; sourceTree = "<group>"; };
+		FADE5E3818A70598000180D8 /* ANTransportConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANTransportConnector.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FADE5DC218A70325000180D8 /* Frameworks */ = {
+		FADE5DFE18A70399000180D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADE5DC918A70325000180D8 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FADE5DE318A70325000180D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FADE5DE918A70325000180D8 /* Cocoa.framework in Frameworks */,
-				FADE5DE818A70325000180D8 /* XCTest.framework in Frameworks */,
+				FADE5E0218A70399000180D8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +58,8 @@
 		FADE5DBC18A70325000180D8 = {
 			isa = PBXGroup;
 			children = (
-				FADE5DCE18A70325000180D8 /* ANTransport */,
-				FADE5DEC18A70325000180D8 /* ANTransportTests */,
+				FADE5DFC18A7036B000180D8 /* ANTransport */,
+				FADE5E0318A70399000180D8 /* TransportTester */,
 				FADE5DC718A70325000180D8 /* Frameworks */,
 				FADE5DC618A70325000180D8 /* Products */,
 			);
@@ -86,8 +68,7 @@
 		FADE5DC618A70325000180D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FADE5DC518A70325000180D8 /* ANTransport.app */,
-				FADE5DE618A70325000180D8 /* ANTransportTests.xctest */,
+				FADE5E0118A70399000180D8 /* TransportTester.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				FADE5DC818A70325000180D8 /* Cocoa.framework */,
-				FADE5DE718A70325000180D8 /* XCTest.framework */,
+				FADE5E1C18A70399000180D8 /* XCTest.framework */,
 				FADE5DCA18A70325000180D8 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -112,85 +93,71 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		FADE5DCE18A70325000180D8 /* ANTransport */ = {
+		FADE5DFC18A7036B000180D8 /* ANTransport */ = {
 			isa = PBXGroup;
 			children = (
-				FADE5DDA18A70325000180D8 /* ANAppDelegate.h */,
-				FADE5DDB18A70325000180D8 /* ANAppDelegate.m */,
-				FADE5DDD18A70325000180D8 /* MainMenu.xib */,
-				FADE5DE018A70325000180D8 /* Images.xcassets */,
-				FADE5DCF18A70325000180D8 /* Supporting Files */,
+				FADE5E2F18A703B3000180D8 /* Base */,
 			);
 			path = ANTransport;
 			sourceTree = "<group>";
 		};
-		FADE5DCF18A70325000180D8 /* Supporting Files */ = {
+		FADE5E0318A70399000180D8 /* TransportTester */ = {
 			isa = PBXGroup;
 			children = (
-				FADE5DD018A70325000180D8 /* ANTransport-Info.plist */,
-				FADE5DD118A70325000180D8 /* InfoPlist.strings */,
-				FADE5DD418A70325000180D8 /* main.m */,
-				FADE5DD618A70325000180D8 /* ANTransport-Prefix.pch */,
-				FADE5DD718A70325000180D8 /* Credits.rtf */,
+				FADE5E0F18A70399000180D8 /* ANAppDelegate.h */,
+				FADE5E1018A70399000180D8 /* ANAppDelegate.m */,
+				FADE5E1218A70399000180D8 /* MainMenu.xib */,
+				FADE5E1518A70399000180D8 /* Images.xcassets */,
+				FADE5E0418A70399000180D8 /* Supporting Files */,
+			);
+			path = TransportTester;
+			sourceTree = "<group>";
+		};
+		FADE5E0418A70399000180D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FADE5E0518A70399000180D8 /* TransportTester-Info.plist */,
+				FADE5E0618A70399000180D8 /* InfoPlist.strings */,
+				FADE5E0918A70399000180D8 /* main.m */,
+				FADE5E0B18A70399000180D8 /* TransportTester-Prefix.pch */,
+				FADE5E0C18A70399000180D8 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FADE5DEC18A70325000180D8 /* ANTransportTests */ = {
+		FADE5E2F18A703B3000180D8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				FADE5DF218A70325000180D8 /* ANTransportTests.m */,
-				FADE5DED18A70325000180D8 /* Supporting Files */,
+				FADE5E3018A703D7000180D8 /* ANTransport.h */,
+				FADE5E3818A70598000180D8 /* ANTransportConnector.h */,
+				FADE5E3718A70546000180D8 /* ANTransportIdentity.h */,
+				FADE5E3118A70501000180D8 /* ANTransportScanner.h */,
+				FADE5E3218A70501000180D8 /* ANTransportScanner.m */,
+				FADE5E3418A7050B000180D8 /* ANTransportServer.h */,
+				FADE5E3518A7050B000180D8 /* ANTransportServer.m */,
 			);
-			path = ANTransportTests;
-			sourceTree = "<group>";
-		};
-		FADE5DED18A70325000180D8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FADE5DEE18A70325000180D8 /* ANTransportTests-Info.plist */,
-				FADE5DEF18A70325000180D8 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FADE5DC418A70325000180D8 /* ANTransport */ = {
+		FADE5E0018A70399000180D8 /* TransportTester */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FADE5DF618A70325000180D8 /* Build configuration list for PBXNativeTarget "ANTransport" */;
+			buildConfigurationList = FADE5E2918A7039A000180D8 /* Build configuration list for PBXNativeTarget "TransportTester" */;
 			buildPhases = (
-				FADE5DC118A70325000180D8 /* Sources */,
-				FADE5DC218A70325000180D8 /* Frameworks */,
-				FADE5DC318A70325000180D8 /* Resources */,
+				FADE5DFD18A70399000180D8 /* Sources */,
+				FADE5DFE18A70399000180D8 /* Frameworks */,
+				FADE5DFF18A70399000180D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ANTransport;
-			productName = ANTransport;
-			productReference = FADE5DC518A70325000180D8 /* ANTransport.app */;
+			name = TransportTester;
+			productName = TransportTester;
+			productReference = FADE5E0118A70399000180D8 /* TransportTester.app */;
 			productType = "com.apple.product-type.application";
-		};
-		FADE5DE518A70325000180D8 /* ANTransportTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FADE5DF918A70325000180D8 /* Build configuration list for PBXNativeTarget "ANTransportTests" */;
-			buildPhases = (
-				FADE5DE218A70325000180D8 /* Sources */,
-				FADE5DE318A70325000180D8 /* Frameworks */,
-				FADE5DE418A70325000180D8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FADE5DEB18A70325000180D8 /* PBXTargetDependency */,
-			);
-			name = ANTransportTests;
-			productName = ANTransportTests;
-			productReference = FADE5DE618A70325000180D8 /* ANTransportTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,11 +168,6 @@
 				CLASSPREFIX = AN;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Nichol";
-				TargetAttributes = {
-					FADE5DE518A70325000180D8 = {
-						TestTargetID = FADE5DC418A70325000180D8;
-					};
-				};
 			};
 			buildConfigurationList = FADE5DC018A70325000180D8 /* Build configuration list for PBXProject "ANTransport" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -220,93 +182,62 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FADE5DC418A70325000180D8 /* ANTransport */,
-				FADE5DE518A70325000180D8 /* ANTransportTests */,
+				FADE5E0018A70399000180D8 /* TransportTester */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FADE5DC318A70325000180D8 /* Resources */ = {
+		FADE5DFF18A70399000180D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADE5DD318A70325000180D8 /* InfoPlist.strings in Resources */,
-				FADE5DE118A70325000180D8 /* Images.xcassets in Resources */,
-				FADE5DD918A70325000180D8 /* Credits.rtf in Resources */,
-				FADE5DDF18A70325000180D8 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FADE5DE418A70325000180D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FADE5DF118A70325000180D8 /* InfoPlist.strings in Resources */,
+				FADE5E0818A70399000180D8 /* InfoPlist.strings in Resources */,
+				FADE5E1618A70399000180D8 /* Images.xcassets in Resources */,
+				FADE5E0E18A70399000180D8 /* Credits.rtf in Resources */,
+				FADE5E1418A70399000180D8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FADE5DC118A70325000180D8 /* Sources */ = {
+		FADE5DFD18A70399000180D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADE5DD518A70325000180D8 /* main.m in Sources */,
-				FADE5DDC18A70325000180D8 /* ANAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FADE5DE218A70325000180D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FADE5DF318A70325000180D8 /* ANTransportTests.m in Sources */,
+				FADE5E0A18A70399000180D8 /* main.m in Sources */,
+				FADE5E3618A7050B000180D8 /* ANTransportServer.m in Sources */,
+				FADE5E3318A70501000180D8 /* ANTransportScanner.m in Sources */,
+				FADE5E1118A70399000180D8 /* ANAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		FADE5DEB18A70325000180D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FADE5DC418A70325000180D8 /* ANTransport */;
-			targetProxy = FADE5DEA18A70325000180D8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		FADE5DD118A70325000180D8 /* InfoPlist.strings */ = {
+		FADE5E0618A70399000180D8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FADE5DD218A70325000180D8 /* en */,
+				FADE5E0718A70399000180D8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FADE5DD718A70325000180D8 /* Credits.rtf */ = {
+		FADE5E0C18A70399000180D8 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FADE5DD818A70325000180D8 /* en */,
+				FADE5E0D18A70399000180D8 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		FADE5DDD18A70325000180D8 /* MainMenu.xib */ = {
+		FADE5E1218A70399000180D8 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FADE5DDE18A70325000180D8 /* Base */,
+				FADE5E1318A70399000180D8 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		FADE5DEF18A70325000180D8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FADE5DF018A70325000180D8 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -380,69 +311,33 @@
 			};
 			name = Release;
 		};
-		FADE5DF718A70325000180D8 /* Debug */ = {
+		FADE5E2A18A7039A000180D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ANTransport/ANTransport-Prefix.pch";
-				INFOPLIST_FILE = "ANTransport/ANTransport-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		FADE5DF818A70325000180D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ANTransport/ANTransport-Prefix.pch";
-				INFOPLIST_FILE = "ANTransport/ANTransport-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		FADE5DFA18A70325000180D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ANTransport.app/Contents/MacOS/ANTransport";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ANTransport/ANTransport-Prefix.pch";
+				GCC_PREFIX_HEADER = "TransportTester/TransportTester-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "ANTransportTests/ANTransportTests-Info.plist";
+				INFOPLIST_FILE = "TransportTester/TransportTester-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		FADE5DFB18A70325000180D8 /* Release */ = {
+		FADE5E2B18A7039A000180D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ANTransport.app/Contents/MacOS/ANTransport";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ANTransport/ANTransport-Prefix.pch";
-				INFOPLIST_FILE = "ANTransportTests/ANTransportTests-Info.plist";
+				GCC_PREFIX_HEADER = "TransportTester/TransportTester-Prefix.pch";
+				INFOPLIST_FILE = "TransportTester/TransportTester-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -458,19 +353,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FADE5DF618A70325000180D8 /* Build configuration list for PBXNativeTarget "ANTransport" */ = {
+		FADE5E2918A7039A000180D8 /* Build configuration list for PBXNativeTarget "TransportTester" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FADE5DF718A70325000180D8 /* Debug */,
-				FADE5DF818A70325000180D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		FADE5DF918A70325000180D8 /* Build configuration list for PBXNativeTarget "ANTransportTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FADE5DFA18A70325000180D8 /* Debug */,
-				FADE5DFB18A70325000180D8 /* Release */,
+				FADE5E2A18A7039A000180D8 /* Debug */,
+				FADE5E2B18A7039A000180D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

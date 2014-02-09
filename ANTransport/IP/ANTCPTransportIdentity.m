@@ -32,7 +32,7 @@ static NSData * readUnitlNULL(NSData * aData, NSData ** remaining);
     }
     return [[ANTCPTransportIdentity alloc] initWithName:devName
                                                    type:devType
-                                                  flags:port
+                                                  flags:0
                                               addresses:addrs];
 }
 

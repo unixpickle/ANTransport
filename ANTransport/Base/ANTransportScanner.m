@@ -10,6 +10,13 @@
 
 @implementation ANTransportScanner
 
+- (id)init {
+    if ((self = [super init])) {
+        _identities = [NSMutableArray array];
+    }
+    return self;
+}
+
 - (BOOL)start {
     if (self.open) return NO;
     return _open = YES;

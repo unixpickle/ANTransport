@@ -46,14 +46,14 @@
     if (udp4Broadcast >= 0) {
         if (setsockopt(udp4Broadcast, SOL_SOCKET, SO_BROADCAST, &broadcastEnable, sizeof(broadcastEnable)) < 0) {
             close(udp4Broadcast);
-            if (udp6Broadcast > 0) close(udp6Broadcast);
+            if (udp6Broadcast >= 0) close(udp6Broadcast);
             return NO;
         }
     }
     if (udp6Broadcast >= 0) {
         if (setsockopt(udp6Broadcast, SOL_SOCKET, SO_BROADCAST, &broadcastEnable, sizeof(broadcastEnable)) < 0) {
             close(udp6Broadcast);
-            if (udp4Broadcast > 0) close(udp4Broadcast);
+            if (udp4Broadcast >= 0) close(udp4Broadcast);
             return NO;
         }
     }
@@ -124,8 +124,8 @@
 - (void)startIPv6Acceptor {
     struct sockaddr_in6 serv_addr6;
     struct in6_addr addr6 = IN6ADDR_ANY_INIT;
-    int serverSocket6 = socket(AF_INET6, SOCK_STREAM, 0);
-    if (serverSocket6 < 0) return;
+    server6Socket = socket(AF_INET6, SOCK_STREAM, 0);
+    if (server6Socket < 0) return;
     
     bzero(&serv_addr6, sizeof(serv_addr6));
     serv_addr6.sin6_family = AF_INET6;
@@ -135,14 +135,14 @@
     int reuse = 1;
     setsockopt(server6Socket, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse));
     
-    if (bind(serverSocket6, (struct sockaddr *)&serv_addr6, sizeof(serv_addr6)) < 0) {
-        close(serverSocket6);
-        serverSocket6 = -1;
+    if (bind(server6Socket, (struct sockaddr *)&serv_addr6, sizeof(serv_addr6)) < 0) {
+        close(server6Socket);
+        server6Socket = -1;
         return;
     }
-    if (listen(serverSocket6, 2) < 0) {
-        close(serverSocket6);
-        serverSocket6 = -1;
+    if (listen(server6Socket, 2) < 0) {
+        close(server6Socket);
+        server6Socket = -1;
         return;
     }
     

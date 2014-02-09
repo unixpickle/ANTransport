@@ -7,9 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANTCPTransportScanner.h"
+#import "ANTCPTransportServer.h"
 
-@interface ANAppDelegate : NSObject <NSApplicationDelegate>
+@interface ANAppDelegate : NSObject <NSApplicationDelegate, ANTransportScannerDelegate, ANTransportServerDelegate, NSTableViewDataSource> {
+    ANTransportServer * server;
+    ANTransportScanner * scanner;
+    IBOutlet NSTableView * tableView;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow * window;
 
 @end

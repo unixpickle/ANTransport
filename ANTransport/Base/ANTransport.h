@@ -19,8 +19,8 @@
 @protocol ANTransport <NSObject>
 
 @property (nonatomic, weak) id<ANTransportDelegate> transportDelegate;
+@property (readonly, getter = isOpen) BOOL isOpen;
 
-- (BOOL)isOpen;
 - (void)close;
 - (void)writeData:(NSData *)data;
 

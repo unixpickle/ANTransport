@@ -10,16 +10,18 @@
 
 @implementation ANTransportServer
 
-- (id)initWithDeviceName:(NSString *)device {
+- (id)initWithDeviceName:(NSString *)device type:(NSString *)type flags:(UInt8)flags {
     if ((self = [super init])) {
         _deviceName = device;
+        _deviceType = type;
+        _flags = flags;
     }
     return self;
 }
 
 - (BOOL)start {
     if (self.isOpen) return NO;
-    _open = YES;
+    return _open = YES;
 }
 
 - (void)stop {

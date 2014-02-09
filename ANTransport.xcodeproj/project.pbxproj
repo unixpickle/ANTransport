@@ -16,6 +16,9 @@
 		FADE5E1618A70399000180D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE5E1518A70399000180D8 /* Images.xcassets */; };
 		FADE5E3318A70501000180D8 /* ANTransportScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E3218A70501000180D8 /* ANTransportScanner.m */; };
 		FADE5E3618A7050B000180D8 /* ANTransportServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E3518A7050B000180D8 /* ANTransportServer.m */; };
+		FADE5E3C18A70A57000180D8 /* ANTCPTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E3B18A70A57000180D8 /* ANTCPTransport.m */; };
+		FADE5E3F18A7106F000180D8 /* ANTCPTransportServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E3E18A7106F000180D8 /* ANTCPTransportServer.m */; };
+		FADE5E4218A7177A000180D8 /* ANTCPTransportScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E4118A7177A000180D8 /* ANTCPTransportScanner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,12 @@
 		FADE5E3518A7050B000180D8 /* ANTransportServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTransportServer.m; sourceTree = "<group>"; };
 		FADE5E3718A70546000180D8 /* ANTransportIdentity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANTransportIdentity.h; sourceTree = "<group>"; };
 		FADE5E3818A70598000180D8 /* ANTransportConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANTransportConnector.h; sourceTree = "<group>"; };
+		FADE5E3A18A70A57000180D8 /* ANTCPTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTCPTransport.h; sourceTree = "<group>"; };
+		FADE5E3B18A70A57000180D8 /* ANTCPTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTCPTransport.m; sourceTree = "<group>"; };
+		FADE5E3D18A7106F000180D8 /* ANTCPTransportServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTCPTransportServer.h; sourceTree = "<group>"; };
+		FADE5E3E18A7106F000180D8 /* ANTCPTransportServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTCPTransportServer.m; sourceTree = "<group>"; };
+		FADE5E4018A7177A000180D8 /* ANTCPTransportScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTCPTransportScanner.h; sourceTree = "<group>"; };
+		FADE5E4118A7177A000180D8 /* ANTCPTransportScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTCPTransportScanner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,7 @@
 		FADE5DFC18A7036B000180D8 /* ANTransport */ = {
 			isa = PBXGroup;
 			children = (
+				FADE5E3918A70A34000180D8 /* IP */,
 				FADE5E2F18A703B3000180D8 /* Base */,
 			);
 			path = ANTransport;
@@ -137,6 +147,19 @@
 				FADE5E3518A7050B000180D8 /* ANTransportServer.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FADE5E3918A70A34000180D8 /* IP */ = {
+			isa = PBXGroup;
+			children = (
+				FADE5E3A18A70A57000180D8 /* ANTCPTransport.h */,
+				FADE5E3B18A70A57000180D8 /* ANTCPTransport.m */,
+				FADE5E3D18A7106F000180D8 /* ANTCPTransportServer.h */,
+				FADE5E3E18A7106F000180D8 /* ANTCPTransportServer.m */,
+				FADE5E4018A7177A000180D8 /* ANTCPTransportScanner.h */,
+				FADE5E4118A7177A000180D8 /* ANTCPTransportScanner.m */,
+			);
+			path = IP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +231,11 @@
 			files = (
 				FADE5E0A18A70399000180D8 /* main.m in Sources */,
 				FADE5E3618A7050B000180D8 /* ANTransportServer.m in Sources */,
+				FADE5E3C18A70A57000180D8 /* ANTCPTransport.m in Sources */,
+				FADE5E3F18A7106F000180D8 /* ANTCPTransportServer.m in Sources */,
 				FADE5E3318A70501000180D8 /* ANTransportScanner.m in Sources */,
 				FADE5E1118A70399000180D8 /* ANAppDelegate.m in Sources */,
+				FADE5E4218A7177A000180D8 /* ANTCPTransportScanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +386,7 @@
 				FADE5E2B18A7039A000180D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -19,11 +19,12 @@
 @interface ANTransportServer : NSObject
 
 @property (readonly) NSString * deviceName;
+@property (readonly) NSString * deviceType;
 @property (nonatomic, weak) id<ANTransportServerDelegate> delegate;
 @property (readonly, getter = isOpen) BOOL open;
 @property (readwrite) UInt8 flags;
 
-- (id)initWithDeviceName:(NSString *)device flags:(UInt8)flags;
+- (id)initWithDeviceName:(NSString *)device type:(NSString *)type flags:(UInt8)flags;
 - (BOOL)start;
 - (void)stop;
 

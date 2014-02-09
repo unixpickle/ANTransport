@@ -13,18 +13,17 @@
 - (void)startIPv4Acceptor;
 - (void)startIPv6Acceptor;
 - (void)acceptMethod:(NSNumber *)fd;
+- (void)broadcastInformation;
 
 @end
 
 @implementation ANTCPTransportServer
 
 - (id)initWithPort:(UInt16)port broadcastPort:(UInt16)bcastPort flags:(UInt8)flags {
-#if TARGET_OS_IPHONE
-    NSString * devName = [[UIDevice currentDevice] name];
-#else
-    NSString * devName = [[NSHost currentHost] localizedName];
-#endif
-    if ((self = [super initWithDeviceName:devName type:@"Objective-C" flags:flags])) {
+    ANTCPTransportIdentity * identity = [ANTCPTransportIdentity localIdentity:port];
+    if ((self = [super initWithDeviceName:identity.deviceName
+                                     type:identity.deviceType
+                                    flags:flags])) {
         _port = port;
         _bcastPort = bcastPort;
     }
@@ -34,6 +33,10 @@
 - (BOOL)start {
     if (![super start]) return NO;
     
+    broadcastTimer = [NSTimer scheduledTimerWithTimeInterval:kANTCPTransportServerHeartbeat
+                                                      target:self
+                                                    selector:@selector(broadcastInformation)
+                                                    userInfo:nil repeats:YES];
     acceptThreads = [NSMutableArray array];
     
     // create UDP broadcaster
@@ -65,6 +68,7 @@
     if (!self.isOpen) return;
     [super stop];
     
+    [broadcastTimer invalidate];
     for (NSThread * th in acceptThreads) [th cancel];
     if (udp6Broadcast >= 0) close(udp6Broadcast);
     if (udp4Broadcast >= 0) close(udp4Broadcast);
@@ -74,6 +78,7 @@
 
 - (void)_handleError:(NSError *)error {
     if (self.isOpen) {
+        [broadcastTimer invalidate];
         for (NSThread * th in acceptThreads) [th cancel];
         if (udp6Broadcast >= 0) close(udp6Broadcast);
         if (udp4Broadcast >= 0) close(udp4Broadcast);
@@ -167,6 +172,29 @@
                                    withObject:tp
                                 waitUntilDone:NO];
         }
+    }
+}
+
+- (void)broadcastInformation {
+    ANTCPTransportIdentity * identity = [ANTCPTransportIdentity localIdentity:self.port];
+    NSData * payload = [identity encode];
+    
+    if (udp4Broadcast >= 0) {
+        struct sockaddr_in s;
+        bzero(&s, sizeof(struct sockaddr_in));
+        s.sin_family = AF_INET;
+        s.sin_port = (in_port_t)htons(self.bcastPort);
+        s.sin_addr.s_addr = htonl(INADDR_BROADCAST);
+        sendto(udp4Broadcast, payload.bytes, payload.length, 0, (struct sockaddr *)&s, sizeof(s));
+    }
+    if (udp6Broadcast >= 0) {
+        struct sockaddr_in6 s6;
+        struct in6_addr addr6 = IN6ADDR_ANY_INIT;
+        bzero(&s6, sizeof(struct sockaddr_in6));
+        s6.sin6_family = AF_INET6;
+        s6.sin6_port = (in_port_t)htons(self.bcastPort);
+        s6.sin6_addr = addr6;
+        sendto(udp6Broadcast, payload.bytes, payload.length, 0, (struct sockaddr *)&s6, sizeof(s6));
     }
 }
 

@@ -6,9 +6,13 @@
 //  Copyright (c) 2014 Alex Nichol. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ANTransport.h"
+
+typedef void (^ANTransportConnectorBlock)(NSError * error, id<ANTransport> transport);
 
 @protocol ANTransportConnector <NSObject>
+
+@property (nonatomic, copy) ANTransportConnectorBlock callback;
 
 - (void)start;
 - (void)cancel;

@@ -20,6 +20,7 @@
 		FADE5E3F18A7106F000180D8 /* ANTCPTransportServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E3E18A7106F000180D8 /* ANTCPTransportServer.m */; };
 		FADE5E4218A7177A000180D8 /* ANTCPTransportScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E4118A7177A000180D8 /* ANTCPTransportScanner.m */; };
 		FADE5E4518A71790000180D8 /* ANTCPTransportIdentity.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E4418A71790000180D8 /* ANTCPTransportIdentity.m */; };
+		FADE5E4818A71EAE000180D8 /* ANTCPTransportConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE5E4718A71EAE000180D8 /* ANTCPTransportConnector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		FADE5E4118A7177A000180D8 /* ANTCPTransportScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTCPTransportScanner.m; sourceTree = "<group>"; };
 		FADE5E4318A71790000180D8 /* ANTCPTransportIdentity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTCPTransportIdentity.h; sourceTree = "<group>"; };
 		FADE5E4418A71790000180D8 /* ANTCPTransportIdentity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTCPTransportIdentity.m; sourceTree = "<group>"; };
+		FADE5E4618A71EAE000180D8 /* ANTCPTransportConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANTCPTransportConnector.h; sourceTree = "<group>"; };
+		FADE5E4718A71EAE000180D8 /* ANTCPTransportConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANTCPTransportConnector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				FADE5E4418A71790000180D8 /* ANTCPTransportIdentity.m */,
 				FADE5E4018A7177A000180D8 /* ANTCPTransportScanner.h */,
 				FADE5E4118A7177A000180D8 /* ANTCPTransportScanner.m */,
+				FADE5E4618A71EAE000180D8 /* ANTCPTransportConnector.h */,
+				FADE5E4718A71EAE000180D8 /* ANTCPTransportConnector.m */,
 			);
 			path = IP;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			files = (
 				FADE5E4518A71790000180D8 /* ANTCPTransportIdentity.m in Sources */,
 				FADE5E0A18A70399000180D8 /* main.m in Sources */,
+				FADE5E4818A71EAE000180D8 /* ANTCPTransportConnector.m in Sources */,
 				FADE5E3618A7050B000180D8 /* ANTransportServer.m in Sources */,
 				FADE5E3C18A70A57000180D8 /* ANTCPTransport.m in Sources */,
 				FADE5E3F18A7106F000180D8 /* ANTCPTransportServer.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "ANTCPTransportIdentity.h"
+#import "ANTCPTransportConnector.h"
 
 static NSData * readUnitlNULL(NSData * aData, NSData ** remaining);
 
@@ -106,6 +107,12 @@ static NSData * readUnitlNULL(NSData * aData, NSData ** remaining);
 
 - (BOOL)isEqual:(id)object {
     return [self isEqualToIdentity:object];
+}
+
+- (id<ANTransportConnector>)generateConnector {
+    ANTCPTransportConnector * connector = [[ANTCPTransportConnector alloc] init];
+    connector.identity = self;
+    return connector;
 }
 
 #pragma mark - Private -

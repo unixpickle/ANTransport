@@ -7,7 +7,22 @@
 //
 
 #import "ANTransportScanner.h"
+#import "ANTCPTransportIdentity.h"
+#include <sys/socket.h>
+#include <netinet/in.h>
 
-@interface ANTCPTransportScanner : ANTransportScanner
+#define kANTCPTransportScannerTimeout 10
+
+@interface ANTCPTransportScanner : ANTransportScanner {
+    UInt16 port;
+    
+    int fd4, fd6;
+    NSThread * thread4, * thread6;
+    
+    NSMutableDictionary * lastSeens;
+    NSTimer * timeoutLoop;
+}
+
+- (id)initWithPort:(UInt16)aPort;
 
 @end
